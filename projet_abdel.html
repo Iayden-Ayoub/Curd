@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projet_abdel.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="cruds">
+        <div class="head">
+           <h1>CRUDS</h1>
+           <h4>PRODUCT MANAGMENT SYSTEM</h4>
+        </div>
+        <div class="input">
+            <input type="text" id="text" placeholder="title">
+            <div class="group">
+                <input onkeyup="counteur()" id="price" type="number" placeholder="price">
+                <input onkeyup="counteur()" id="taxes" type="number" placeholder="taxes">
+                <input onkeyup="counteur()" id="abs" type="number" placeholder="abs">
+                <input onkeyup="counteur()" id="discount" type="number" placeholder="discount">
+                <small class="red"></small>
+            </div>
+            <input type="text" id="count" placeholder="count">
+            <input type="text" id="category" placeholder="category">
+            <button id="Create">Create</button>
+            <input id="search" type="text" placeholder="Search">
+            <div id="group">
+                <button onclick="searchBy(this.id)" id="searchTitle">search by title</button>
+                <button onclick="searchBy(this.id)" id="searchCategory">search by category</button>
+            </div>
+            <button id="delall">Delet All</button>
+        </div>
+        <table id="table">
+            <tr>
+                <th>Id</th>
+                <th>titre</th>
+                <th>price</th>
+                <th>taxes</th>
+                <th>abs</th>
+                <th>discount</th>
+                <th>total</th>
+                <th>category</th>
+                <th>Update</th>
+                <th>Delet</th>
+                
+            </tr>
+            <tbody id="tablee"></tbody>
+            
+        </table>
+    </div>
+    <div class="container">
+        <h1 id="titlee">Offline Now</h1>
+        <ul>
+            <li>Checking the connection</li>
+            <li>Checking the proxy</li>
+            <li>Running Windows Network</li>
+        </ul>
+        <button id="btn">Reload</button>
+    </div>
+
+    <script src="projet_abdel.js"></script>
+</body>
+</html>
